@@ -15,6 +15,9 @@ modelling_baseline:
     - 'sklearn.ensemble.GradientBoostingClassifier'
     - 'xgboost.XGBClassifier'
     - 'lightgbm.LGBMClassifier'
+  init_args:
+    'sklearn.svm.SVC':
+      probability: true
   target_column: 'Outcome'
   train_splits:
   - 'train'

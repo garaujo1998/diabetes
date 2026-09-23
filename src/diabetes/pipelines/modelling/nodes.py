@@ -42,7 +42,7 @@ def train_model(
 
         cls = _load_class(class_path)
 
-        estimator = cls(**params.get('init_args', {}))
+        estimator = cls(**params.get('init_args', {}).get(class_path, {}))
 
         estimator.fit(X_train, y_train)
 
