@@ -40,6 +40,8 @@ As metricas de desempenho foram adicionadas para refletir o notebook:
 - roc_auc
 - n_samples (usado pelo Donald)
 
+PROXIMOS PASSOS
 # Ao inves de dropar os zeros, o notebook usou KNN = 5 como estrategia de inputacao.
 # Tratamento de outliers
 # Otimizacao de hiperparametros
+# Por algum motivo, o código passou a falhar e só rodar para 3 classes de modelos.
