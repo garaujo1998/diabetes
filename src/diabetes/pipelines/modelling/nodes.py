@@ -93,3 +93,27 @@ def evaluate_model(
         all_metrics[class_path] = model_metrics
 
     return all_metrics
+
+def select_best_model(
+        model_artifact: dict[str, Any],
+        metrics: dict[str, Any],
+        params: dict[str, Any]
+    ) -> dict[str, Any]:
+
+    split = params['selection_split']
+    metric = params['selection_metric']
+
+    best_class_path = max(
+        metrics,
+        key = lambda class_path: metrics[class_path][split][metric]
+    )
+
+    return {
+        'estimator': model_artifact['estimators'][best_class_path],
+        'class_path': best_class_path,
+        'target_column': model_artifact['target_column'],
+        'feature_columns': model_artifact['feature_columns'],
+        'selection_split': split,
+        'selection_metric': metric,
+        'selection_score': metrics[best_class_path][split][metric]
+    }

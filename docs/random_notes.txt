@@ -1,7 +1,7 @@
 GA Notes
 
 Nao adicionei encoding porque todas as variaveis sao int64 ou float64 segundo o .ipynb compartilhado.
-Apenas a coluna 'Outcome' é categórica (que é a target). Preciso fazer encoding da variável target? 
+Apenas a coluna 'Outcome' é categórica (que é a target). Preciso fazer encoding da variável target?
 - Claude said No
 
 Balanceamento do dataframe em relacao a variavel target:
@@ -44,4 +44,11 @@ PROXIMOS PASSOS
 # Ao inves de dropar os zeros, o notebook usou KNN = 5 como estrategia de inputacao.
 # Tratamento de outliers
 # Otimizacao de hiperparametros
+
+
+
+Escolha do melhor modelo
+- Criação do pipeline de inferencia
+- 9 modelos foram treinados e depois o melhor foi escolhido segundo o maior roc_auc no split 'validate'
+
 # Por algum motivo, o código passou a falhar e só rodar para 3 classes de modelos.
