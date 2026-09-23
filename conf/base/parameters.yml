@@ -10,6 +10,17 @@ original_columns:
     - 'BMI'
     - 'Age'
 
+inference_columns:
+  numerical:
+    - 'Pregnancies'
+    - 'Glucose'
+    - 'BloodPressure'
+    - 'SkinThickness'
+    - 'Insulin'
+    - 'DiabetesPedigreeFunction'
+    - 'BMI'
+    - 'Age'
+
 columns:
   target: 'Outcome'
   categorical:

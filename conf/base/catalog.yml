@@ -35,6 +35,10 @@ baseline_metrics:
   filepath: data/08_reporting/baseline_metrics.json
   #versioned: true
 
+best_model:
+  type: pickle.PickleDataset
+  filepath: data/06_models/best_model.pkl
+
 
 # ---------- INFERENCE CATALOG
 
@@ -44,6 +48,6 @@ raw_inference_data:
   load_args:
     sep: ','
 
-#inference_predictions:
-#  type: json.JSONDataset
-#  filepath: data/07_model_output/inferences.json
+inference_predictions:
+  type: json.JSONDataset
+  filepath: data/07_model_output/inferences.json

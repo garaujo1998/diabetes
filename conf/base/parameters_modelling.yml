@@ -25,3 +25,7 @@ modelling_baseline:
   - 'train'
   - 'test'
   - 'validate'
+
+model_selection:
+  selection_split: 'validate'
+  selection_metric: 'roc_auc'
