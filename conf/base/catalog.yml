@@ -39,6 +39,14 @@ best_model:
   type: pickle.PickleDataset
   filepath: data/06_models/best_model.pkl
 
+modelling_encoders:
+  type: pickle.PickleDataset
+  filepath: data/06_models/modelling_encoders.pkl
+
+modelling_scalers:
+  type: pickle.PickleDataset
+  filepath: data/06_models/modelling_scalers.pkl
+
 
 # ---------- INFERENCE CATALOG
 
