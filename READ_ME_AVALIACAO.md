@@ -1,6 +1,6 @@
 # Previsão de incidência de diabetes com Kedro
 
-Este documento descreve como os pipelines foram construídos a partir do notebook `diabetes-prediction.ipynb` e por que cada decisão foi tomada. As anotações feitas durante o desenvolvimento estão em `docs/random_notes.txt`.
+Este documento descreve como os pipelines foram construídos a partir do notebook `diabetes-prediction.ipynb` e por que cada decisão foi tomada.
 
 ## Como rodar
 
