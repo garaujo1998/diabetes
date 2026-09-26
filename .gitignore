@@ -15,6 +15,9 @@ data/**
 # except their sub-folders
 !data/**/
 
+# keep the raw datasets
+!data/01_raw/*.csv
+
 # also keep all .gitkeep files
 !.gitkeep
 
